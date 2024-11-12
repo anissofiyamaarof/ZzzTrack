@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZzzTrack.About"
+             Title="About"
+             BackgroundColor="#DCFFEA">
+
+
+    <VerticalStackLayout>
+        <StackLayout x:Name="imageContainer" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,10,0,0">
+            <Image Source="aboutimage" WidthRequest="150" HeightRequest="150"/>
+        </StackLayout>
+
+        <Label Text="What is ZzzTrack?" TextColor="Black" HorizontalOptions="Start" FontAttributes="Bold" Margin="30,10,0,0"/>
+        <Label Text="A mobile application used to track sleep hour patterns to promote overall well-being throughout the day.
+You can also receive an indication of whether your average sleep duration for the week suggests you are achieving sufficient rest or not. " 
+               TextColor="Black" HorizontalOptions="Start" Margin="30,10,30,0"/>
+
+        <Label Text="Key Features" TextColor="Black" HorizontalOptions="Start" FontAttributes="Bold" Margin="30,20,0,0" />
+        <Label Text="1. Average sleep duration calculator" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" Margin="50,15,40,0"/>
+        <Label Text="– Enter the hours of sleep daily and get the current calculated average sleep duration." TextColor="Black" HorizontalOptions="Start" Margin="50,10,40,0"/>
+        <Label Text="2. Sleep duration sufficiency indicator" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" Margin="50,15,40,0"/>
+        <Label Text="– Receive an indication of whether your average sleep duration for the week suggests you are achieving sufficient rest or not." TextColor="Black" HorizontalOptions="Start" Margin="50,10,40,0"/>
+        <Label Text="3. General information" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" Margin="50,15,40,0"/>
+        <Label Text="– Check out our tips on how to improve sleep quality and fix sleep schedule. " TextColor="Black" HorizontalOptions="Start" Margin="50,10,40,0"/>
+
+        <Label Text="Developer • Anis Sofiya binti Ma'arof • SW01081166" TextColor="Grey" HorizontalOptions="Center" Margin="0,20,0,0"/>
+        <Label Text="CSNB5123 • Mobile App Development • 01A" TextColor="Grey" HorizontalOptions="Center" Margin="0,0,0,0"/>
+        <Label Text="Lecturer • Ts. Md Nabil bin Ahmad Zawawi" TextColor="Grey" HorizontalOptions="Center" Margin="0,0,0,50"/>
+    </VerticalStackLayout>
+</ContentPage>

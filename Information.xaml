@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZzzTrack.Information"
+             Title="Information"
+             BackgroundColor="#DCFFEA">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="infoicon.png" Clicked="OnItemClickedAsync" />
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0,10,0,0">
+                <ImageButton Source="improve" WidthRequest="200" HeightRequest="200"/>
+                <Label Text="1. Increase bright light exposure during the day" TextColor="Black" HorizontalOptions="Start" FontAttributes="Bold" Margin="30,10,0,0" />
+                <Label Text="Natural sunlight or bright light during the day helps keep your circadian rhythm healthy. This improves daytime energy, as well as nighttime sleep quality and duration." TextColor="Black" HorizontalOptions="Start" Margin="50,10,40,0"/>
+                <Label Text="2. Reduce blue light exposure in the evening" TextColor="Black" HorizontalOptions="Start" FontAttributes="Bold" Margin="30,15,0,0" />
+                <Label Text="Again, this is due to its effect on your circadian rhythm, tricking your brain into thinking it’s still daytime. This reduces hormones like melatoninTrusted Source, which help you relax and get deep sleep." TextColor="Black" HorizontalOptions="Start" Margin="50,10,40,0"/>
+                <Label Text="3. Don’t consume caffeine late in the day" TextColor="Black" HorizontalOptions="Start" FontAttributes="Bold" Margin="30,15,0,0" />
+                <Label Text="A single dose can enhance focus, energy, and sports performance. However, when consumed late in the day, caffeine stimulates your nervous system and may stop your body from naturally relaxing at night." TextColor="Black" HorizontalOptions="Start" Margin="50,10,40,0"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0,40,0,0">
+                <ImageButton Source="fix" WidthRequest="200" HeightRequest="200" />
+                <Label Text="1. Have a bedtime routine" TextColor="Black" HorizontalOptions="Start" FontAttributes="Bold" Margin="30,10,0,0" />
+                <Label Text="Try to follow the same steps each night before going to bed, such as dimming the lights, quietly reading or stretching, putting on pajamas, 
+and brushing your teeth. Over time, those actions become cues that tell your body that it is time for sleep. To promote mental tranquility, incorporate relaxation methods such as meditation, yoga, listening to soothing music, or reading." TextColor="Black" HorizontalOptions="Start" Margin="50,10,40,0"/>
+                <Label Text="2. Be careful with naps" TextColor="Black" HorizontalOptions="Start" FontAttributes="Bold" Margin="30,15,0,0" />
+                <Label Text="While naps can be restorative in some cases, they can also disrupt your sleep routine. As a general rule, try to keep naps under 30 minutes and only early in the afternoon to prevent nighttime sleep disruptions." TextColor="Black" HorizontalOptions="Start" Margin="50,10,40,0"/>
+                <Label Text="3. Cultivate an inviting sleep environment" TextColor="Black" HorizontalOptions="Start" FontAttributes="Bold" Margin="30,15,0,0" />
+                <Label Text="A dark and quiet bedroom is best for promoting restful sleep. A cool yet comfortable temperature and soothing smells, like lavender, may promote relaxation and provide cues for sleep. You can also make your bedroom a haven for rest with a comfortable mattress, pillow, and bedding." TextColor="Black" HorizontalOptions="Start" Margin="50,10,40,50"/>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

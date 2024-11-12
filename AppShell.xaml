@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ZzzTrack.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ZzzTrack"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.TitleColor="White"
+    Shell.BackgroundColor="#399492"
+    Title="ZzzTrack">
+
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout>
+            <Label Text="MENU" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+
+    <ShellContent
+        Title="ZzzTrack"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+        Title="Record"
+        ContentTemplate="{DataTemplate local:Record}"
+        Route="Record" />
+    <ShellContent
+        Title="Information"
+        ContentTemplate="{DataTemplate local:Information}"
+        Route="Information" />
+
+</Shell>

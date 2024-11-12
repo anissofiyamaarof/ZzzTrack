@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZzzTrack.MainPage"
+             BackgroundColor="#DCFFEA">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="infoicon.png" Clicked="OnItemClickedAsync" />
+    </ContentPage.ToolbarItems> 
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="40,0">
+
+            <Grid Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Date:" FontAttributes="Bold"/>
+
+                <ImageButton Source="calendaricon.png"
+                     WidthRequest="35"
+                     HeightRequest="35"
+                     IsVisible="true"
+                     HorizontalOptions="End"
+                     Margin="0,15,0,0"
+                />
+
+                <DatePicker x:Name="selectDate" 
+                            DateSelected="onDatePickerSelected"
+                            Format="dd/MM/yyyy"
+                            HeightRequest="50" 
+                            HorizontalOptions="FillAndExpand"
+                            Margin="0,15,0,0"
+                />
+            </Grid>
+
+            <StackLayout>
+                <Label Text="Sleep duration:" FontAttributes="Bold" Margin="0,20,0,0"/>
+                
+                <Entry x:Name="inputHour" 
+                       Placeholder="Enter hour(s) of sleep duration" 
+                       Keyboard="Numeric"/>
+            </StackLayout>
+
+            <Button x:Name="saveButton"
+                    Text="Save"
+                    CornerRadius="20"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#399492"
+                    Clicked="OnSaveRecord"
+                    Margin="0,20,0,0"/>
+
+            <StackLayout>
+
+                <Label x:Name="averageSleepLabel" Text="Current Average Sleep Duration :" FontAttributes="Bold" Margin="0,30,0,5" HorizontalOptions="Start"/>
+                <Label Text="*The week starts on Monday" FontAttributes="Bold" Margin="0,0,0,15" HorizontalOptions="Start" TextColor="Grey" FontSize="12"/>
+                <Frame BackgroundColor="#163B5D" CornerRadius="15" Padding="10">
+                    <Label x:Name="averageDurationLabel" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="20"/>
+                </Frame>
+
+
+                <Label Text="Status :" FontAttributes="Bold" Margin="0,20,0,10" HorizontalOptions="Start"/>
+                <StackLayout x:Name="imageContainer" HorizontalOptions="Start" VerticalOptions="Start"/>
+
+                <Frame BackgroundColor="#399492" CornerRadius="15" Padding="10" Margin="0,15,0,50">
+                    <Label x:Name="statusLabel" TextColor="White" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="5,10,5,10"/>
+                </Frame>
+
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
